@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kanye West - Biografia e Contato</title>
+
+  <style>
+    :root {
+      --preto: #0d0d0d;
+      --dourado: #f1c40f;
+      --cinza-claro: #f4f4f4;
+      --branco: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--cinza-claro);
+      color: var(--preto);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--preto);
+      color: var(--branco);
+      padding: 1.5em 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--branco);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--dourado);
+    }
+
+    main {
+      padding: 3em 1.5em;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 4em;
+      background-color: var(--branco);
+      padding: 2em;
+      border-left: 6px solid var(--dourado);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h1, h2 {
+      color: var(--preto);
+      margin-bottom: 1em;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      border-bottom: 2px solid var(--dourado);
+      padding-bottom: 0.3em;
+    }
+
+    h2 {
+      font-size: 1.8em;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+    }
+
+    input, textarea {
+      padding: 0.8em;
+      margin-bottom: 1.2em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+
+    button {
+      padding: 0.9em;
+      background-color: var(--preto);
+      color: var(--branco);
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #222;
+    }
+
+    #mensagem-status {
+      margin-top: 1em;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: var(--preto);
+      color: var(--branco);
+      text-align: center;
+      padding: 1.2em 0;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1em;
+      }
+
+      main {
+        padding: 2em 1em;
+      }
+
+      section {
+        padding: 1.5em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h1>Kanye West</h1>
+      <p>Kanye Omari West é mais do que um músico — ele é um fenômeno cultural. Compositor, rapper, produtor musical, designer e empresário, Kanye redefiniu os limites da música, da moda e da mídia.</p>
+      <p>De álbuns inovadores como <strong>Graduation</strong>,<strong>The College Dropout</strong> e <strong>My Beautiful Dark Twisted Fantasy</strong> até colaborações com marcas globais e projetos de arquitetura e moda, Kanye está sempre rompendo fronteiras criativas.</p>
+      <p>Amado e criticado na mesma medida, Kanye é uma figura que desafia definições fáceis — e é isso que o torna tão fascinante.</p>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre Kanye</h2>
+      <p>Kanye nasceu em Atlanta em 1977 e cresceu em Chicago. Sua mãe, Donda West, foi uma professora universitária e sua maior inspiração. A perda dela influenciou profundamente sua obra, levando à criação do álbum <em>Donda</em> em sua homenagem.</p>
+      <p>Ele começou como produtor, ganhando destaque ao trabalhar com Jay-Z. Em 2004, lançou seu primeiro álbum solo, <em>The College Dropout</em>, que foi um marco para o hip-hop moderno. Desde então, ele continuou inovando com projetos como <em>808s & Heartbreak</em>, <em>My Beautiful Dark Twisted Fantasy</em>, <em>Yeezus</em> e <em>Donda</em>.</p>
+      <p>Fora da música, Kanye lançou a marca de moda <strong>Yeezy</strong> e colaborou com Adidas, Balenciaga e GAP. Suas opiniões polêmicas, aparições públicas ousadas e ambições políticas geram debates constantes, mas seu impacto cultural é inegável.</p>
+    </section>
+
+    <section id="contato">
+      <h2>Fale sobre Kanye</h2>
+      <form id="form-contato">
+        <label for="nome">Seu nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">Seu e-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensagem">Sua opinião sobre Kanye:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+        <p id="mensagem-status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p> Kanye West, melhor rapper do mundo </p>
+  </footer>
+
+  <script>
+    document.getElementById('form-contato').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const nome = document.getElementById('nome').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const mensagem = document.getElementById('mensagem').value.trim();
+      const status = document.getElementById('mensagem-status');
+
+      if (!nome || !email || !mensagem) {
+        status.textContent = 'Por favor, preencha todos os campos.';
+        status.style.color = 'red';
+        return;
+      }
+
+      const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+      if (!emailRegex.test(email)) {
+        status.textContent = 'Por favor, insira um e-mail válido.';
+        status.style.color = 'red';
+        return;
+      }
+
+      status.textContent = 'Obrigado por compartilhar sua opinião!';
+      status.style.color = 'green';
+
+      document.getElementById('form-contato').reset();
+    });
+  </script>
+</body>
+</html>
